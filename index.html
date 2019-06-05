@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="./SlimeVolleyballLegacy_files/Input.js"></script>
+    <script type="text/javascript" src="./SlimeVolleyballLegacy_files/SlimeAI.js"></script>
+    <script type="text/javascript" src="./SlimeVolleyballLegacy_files/main.js"></script>
+  </head>
+  <body onload="bodyload()">
+
+  <div id="ContentDiv">
+    <div id="GameContentDiv">
+      <canvas></canvas>
+      <!--<div class="menu" style="position: absolute; left: 0px; top: 0px; width: 750px; height: 375px; background: url(&quot;sky2.jpg&quot;) no-repeat rgb(204, 170, 102); >-->
+        <div style="text-align:center;">
+          <h1 style="margin-top:30px;">Slime Volleyball</h1>
+          <!--<span onclick="start(true)" class="btn" style="display:inline-block;margin:20px 30px 20px 30px;font-size:40px;">Player</span>-->
+          <!--<span onclick="start(false)" class="btn" style="display:inline-block;margin:20px 30px 20px 30px;font-size:40px;">Two Player</span>-->
+        </div>
+      </div>
+      <div id="OptionsDiv">
+        <span class="close-button" onclick="hideOptions()">close</span>
+        <span class="option-wrapper">
+          <input id="LegacyGraphics" type="checkbox">
+          <label for="LegacyGraphics">Legacy Graphics</label>
+        </span>
+        <span class="option-wrapper">
+          <input id="PhysicsLog" type="checkbox">
+          <label for="PhysicsLog">Enable Physics Log</label>
+        </span>
+        <span class="option-wrapper">
+          <input id="SlowMotion" type="checkbox">
+          <label for="SlowMotion">Slow Motion</label>
+        </span>
+      </div>
+      <span class="SmallButton" onclick="showOptions()">Options</span>
+    </div>
+  </body>
+</html>
