@@ -588,7 +588,7 @@ function bodyload() {
 
     // Create options menu div
     smallMenuDiv = document.createElement('div');
-    smallMenuDiv.style.position = 'absolute';
+    // smallMenuDiv.style.position = 'absolute';
 
 
     // Initialize Logging
@@ -605,16 +605,16 @@ function bodyload() {
     localSkyImage.onload = function() {
         backImages['sky'] = this;
     }
-    var localCaveImage = new Image();
-    localCaveImage.src = 'cave.jpg';
-    localCaveImage.onload = function() {
-        backImages['cave'] = this;
-    }
-    var sunsetImage = new Image();
-    sunsetImage.src = 'sunset.jpg';
-    sunsetImage.onload = function() {
-        backImages['sunset'] = this;
-    }
+    // var localCaveImage = new Image();
+    // localCaveImage.src = 'cave.jpg';
+    // localCaveImage.onload = function() {
+    //     backImages['cave'] = this;
+    // }
+    // var sunsetImage = new Image();
+    // sunsetImage.src = 'sunset.jpg';
+    // sunsetImage.onload = function() {
+    //     backImages['sunset'] = this;
+    // }
 
     var localBallImage = new Image();
     localBallImage.src = 'vball.png';
@@ -685,10 +685,9 @@ function start(startAsOnePlayer) {
     gameIntervalObject = setInterval(gameIteration, 20);
 }
 function toInitialMenu() {
-    menuDiv.innerHTML = '<div style="text-align:center;">' +
-        '<h1 style="margin-top:30px;">Slime Volleyball</h1>' +
-        '<span onclick="start(true)" class="btn" style="display:inline-block;margin:20px 30px 20px 30px;font-size:28px;">You vs Computer</span>' +
-        '<span onclick="start(false)" class="btn" style="display:inline-block;margin:20px 30px 20px 30px;font-size:28px;">You vs Player</span>'
+    menuDiv.innerHTML = '<h1>Slime Volleyball</h1>' +
+        '<span onclick="start(true)" class="btn">You vs Computer</span>' +
+        '<span onclick="start(false)" class="btn">You vs Player</span>'
     '</div>';
 }
 function loadOptions() {
